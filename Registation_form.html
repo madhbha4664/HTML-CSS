@@ -1,0 +1,126 @@
+<html>
+
+<head>
+    <style>
+        #form {
+            
+            border: 3px solid black;
+            border-radius: 20px;
+            margin-top: 50px;
+            margin-right: 650px;
+            width: 400px;
+            height: 420px;
+            padding:auto;
+            
+
+
+
+
+        }
+
+        #heading {
+            font-family: 'Times New Roman', Times, serif;
+            border: 1px solid black;
+            width: 230px;
+            height: 30px;
+            background-color: wheat;
+            
+        }
+
+        .date {
+            margin-right: 55px;
+
+        }
+
+        .regester {
+
+            width: 90px;
+            cursor: pointer;
+            background-color: forestgreen;
+
+        }
+
+        .reset {
+
+            cursor: pointer;
+
+background-color: red;
+
+        }
+
+        .body {
+            background-image: url(https://wallpapercave.com/dwp1x/wp2153297.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+        .select{
+                 
+            margin-left:50px;
+
+        }
+
+        .xender{
+            margin-left: 70px;
+        
+        }
+
+        .bdate{
+
+            margin-left:78px ;
+        }
+    </style>
+
+
+</head>
+
+<body class="body">
+    <center>
+        <form id="form" method="post";
+            action: madhav.html;>
+
+            <h2 id="heading"> Registation Form</h2>
+            <input type="text" required name="username" placeholder="Name" pattern="[a-z A-z]{4,40}" autofocus> <br><br>
+            <input type="text" required name="email" placeholder="E-mail"> <br><br>
+            <input type="password" required placeholder="Password" maxlength="15" minlength="5"> <br><br>
+            <input type="text" required placeholder="Phone Number" pattern="[0-9]{10}"> <br><br>
+             
+           <div class="bdate">Birth Date : <input type="date" name="birthdate" required class="date" placeholder="Birth Date"><br><br></div>
+            <div class="xender">
+            Gender :
+            <input type="radio" required name="gender" >Male
+            <input type="radio" required placeholder="" name="gender">Female
+            <input type="radio" required placeholder="" name="gender">Other  
+            </div><br>
+            <!-- Languages Are You Know:<br>
+        <input type="checkbox" required>Gujarati
+        <input type="checkbox" required>Hindi
+        <input type="checkbox" required>English-->
+            <div class="select"> Country:
+            <Select>
+                <option hidden>...Select Your Country...</option>
+                <option>INDIA</option>
+                <option>USA</option>
+                <option>RUSSIA</option>
+                <option>NEPAL</option>
+
+            </Select>
+            </div>
+
+
+
+
+
+            <br><br>
+            <input type="submit" name="submit" value="REGISTER" required class="regester">
+            <input type="reset" name="reset" required class="reset">
+        </form>
+    </center>
+
+
+
+
+</body>
+
+</html>
