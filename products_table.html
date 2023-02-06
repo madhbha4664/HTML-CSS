@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <title>Products_cart</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+
+        }
+
+
+
+        .body {
+
+            background-color: cornsilk;
+        }
+
+        .products {
+            display: flex;
+            padding-left: 150px;
+            padding-top: 50px;
+            margin: 100px auto;
+            flex-wrap: wrap;     
+
+
+
+
+
+
+        }
+
+        .products .cart1 {
+
+
+            height: 400px;
+            width: 250px;
+            padding-top: 30px;
+            padding-left: 25px;
+            position: relative;
+            box-shadow: 0 0 10px black;
+            margin-right: 150px;
+            margin-top: 50px;
+            background-color: whitesmoke;
+
+
+
+
+        }
+
+        .products .background {
+
+            height: 100px;
+            width: 200px;
+            background-color: rgba(0, 0, 0, 0.05);
+            position: relative;
+
+
+
+        }
+        
+
+        .background img {
+
+            height: 150px;
+            width: 150px;
+            border: 1px solid;
+
+           
+        }
+
+        .products .cart1 .background .colour {
+
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background-color: rgb(7, 63, 7);
+            position: absolute;
+            bottom: 10px;
+            left: 10px
+        }
+
+        .products .cart1 .heading {
+
+            position: absolute;
+            top: 180px;
+            left: 70px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 25px;
+        }
+
+        .products .cart1 .text {
+            position: absolute;
+            top: 230px;
+            left: 50px;
+            text-align: center;
+            font-size: 12px;
+
+
+        }
+
+        .products .cart1 .price {
+
+            position: absolute;
+            bottom: 100px;
+            left: 100px;
+            color: rgba(22, 214, 141, 0.788);
+            ;
+
+
+
+        }
+
+        .products .cart1 .star {
+
+
+            position: absolute;
+            bottom: 70px;
+            left: 80px;
+            font-size: 10px;
+
+
+
+        }
+
+        .products .cart1 .button {
+
+            width: 250px;
+            height: 40px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            color: white;
+            background-color: rgba(22, 214, 141, 0.788);
+            cursor: pointer;
+            border: none;
+
+        }
+
+
+        .products .cart1 .background .image2 {
+
+            height: 180px;
+            width: 180px;
+            position: absolute;
+            top: -35px;
+            left: 5px;
+            transform: rotate(-30deg);
+        }
+
+
+
+        .products .cart1 .background .colour2 {
+
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background-color: rgb(212, 48, 48);
+            position: absolute;
+            bottom: 10px;
+            left: 10px
+        }
+
+        .products .cart1 .price2 {
+
+            position: absolute;
+            bottom: 100px;
+            left: 100px;
+            color: rgb(212, 48, 48);
+
+        }
+
+
+        .products .cart1 .button2 {
+
+            width: 250px;
+            height: 40px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            color: white;
+            background-color: rgb(212, 48, 48);
+            cursor: pointer;
+            border: none;
+
+        }
+
+        .products .cart1 .background .image3 {
+
+            height: 150px;
+            width: 150px;
+            position: absolute;
+            top: -25px;
+            left: 25px;
+
+        }
+
+
+        .products .cart1 .background .colour3 {
+
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background-color: rgb(212, 226, 10);
+            position: absolute;
+            bottom: 10px;
+            left: 10px
+        }
+
+
+
+        .products .cart1 .price3 {
+
+            position: absolute;
+            bottom: 100px;
+            left: 100px;
+            color: rgb(212, 226, 10);
+        }
+
+
+        .products .cart1 .button3 {
+
+            width: 250px;
+            height: 40px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            color: white;
+            background-color: rgb(212, 226, 10);
+            cursor: pointer;
+            border: none;
+
+        }
+
+        
+    </style>
+</head>
+
+<body class="body">
+
+    <div class="products">
+
+
+        <div class="cart1">
+
+
+            <div class="background">
+
+                <img src="image/images-removebg-preview.png" alt="">
+                <div class="colour"></div>
+
+            </div>
+
+
+            <h1 class="heading">GARNIER</h1>
+
+            <div class="text">
+                <P>Garnier Pure Active Micellar</P>
+                <p></p>Cleansing Water.125 ml</p>
+            </div>
+
+            <h3 class="price">$60</h3>
+
+            <div class="star">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+
+            <div>
+                <button class="button">ADD TO CART</button>
+            </div>
+
+
+        </div>
+
+
+
+        <!-- product---2 -->
+
+
+        <div class="cart1">
+
+
+            <div class="background">
+
+                <img class="image2"
+                    src="https://o.remove.bg/downloads/75c72f1f-0f83-4c9d-bfc3-a2eeb93c44f3/Triple-Mid-Unleash-Men-Basketball-Shoes-removebg-preview.png">
+                <div class="colour2"></div>
+
+            </div>
+
+
+            <h1 class="heading">GARNIER</h1>
+
+            <div class="text">
+                <P>Garnier Pure Active Micellar</P>
+                <p></p>Cleansing Water.125 ml</p>
+            </div>
+
+            <h3 class="price2">$60</h3>
+
+            <div class="star">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+
+            <div>
+                <button class="button2">ADD TO CART</button>
+            </div>
+
+
+        </div>
+
+
+        <!-- product---3 -->
+
+
+        <div class="cart1">
+
+
+            <div class="background">
+
+                <img class="image3"
+                    src="https://o.remove.bg/downloads/d481feda-1d26-4148-90cd-ffe9d076aa1a/images-removebg-preview.png">
+                <div class="colour3"></div>
+
+            </div>
+
+
+            <h1 class="heading">GARNIER</h1>
+
+            <div class="text">
+                <P>Garnier Pure Active Micellar</P>
+                <p></p>Cleansing Water.125 ml</p>
+            </div>
+
+            <h3 class="price3">$60</h3>
+
+            <div class="star">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+
+            <div>
+                <button class="button3">ADD TO CART</button>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

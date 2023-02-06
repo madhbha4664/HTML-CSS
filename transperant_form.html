@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Task</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url("https://images.pexels.com/photos/7197266/pexels-photo-7197266.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        /* main title  */
+        .title {
+
+            width: 500px;
+            margin: 30px auto;
+            text-align: center;
+            font-size: 45px;
+            color: white;
+        }
+
+        /* main Form  */
+        .form {
+            color: white;
+            width: 450px;
+            height: 450px;
+            margin: auto;
+            border: 1px solid white;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        /* Main Div latters and 2 button  */
+        .main {
+            /* border: 1px solid white; */
+            text-align: center;
+        }
+
+        .main p:first-child {
+            font-size: 40px;
+            margin-top: 15px;
+        }
+
+        .main p:nth-child(2) {
+            font-size: 15px;
+            margin-top: 15px;
+        }
+
+        /* Tow Button  */
+        .btns {
+            /* border: 1px solid white; */
+            margin-top: 10px;
+        }
+
+        .btns button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: 1px solid white;
+            width: 140px;
+            padding: 7px;
+            margin: 0px 30px;
+            cursor: pointer;
+        }
+
+        .btns button:hover {
+            background-color: rgb(41, 164, 41);
+        }
+
+        .main p:last-child {
+            margin-top: 15px;
+            font-size: 15px;
+        }
+
+        /* input (email and password text ) */
+        .main-1 {
+            /* border: 1px solid white; */
+            width: 360px;
+            margin: 15px auto;
+        }
+
+        input[type="email"] {
+            padding: 7px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border: none;
+            width: 350px;
+            color: white;
+        }
+
+        input[type="password"] {
+            padding: 7px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border: none;
+            width: 350px;
+            margin-top: 30px;
+            color: white;
+        }
+
+        ::placeholder {
+            color: white
+        }
+
+
+        .main-2 {
+            width: 360px;
+            font-size: 15px;
+            /* border: 1px solid red; */
+            margin: 30px auto;
+            color: white;
+        }
+
+        .main-2 span {
+            margin-left: 150px;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"]:checked {
+            box-shadow: 0, rgb(41, 164, 41), 0, 1px, white;
+        }
+
+        .main-3 {
+            /* border: 1px solid red; */
+            width: 360px;
+            margin: auto;
+
+        }
+
+        .main-3 input {
+            color: white;
+            padding: 10px;
+            width: 360px;
+            background-color: rgb(38, 181, 38);
+            cursor: pointer;
+            opacity: 0.7;
+            border: none;
+
+        }
+
+        .main-3 input:hover {
+            opacity: 1;
+        }
+
+
+
+
+
+
+        /* Last Div Design By  */
+        .last {
+            /* border: 1px solid white; */
+            color: white;
+            width: 440px;
+            font-size: 13px;
+            margin: 5% auto;
+
+        }
+
+
+        .last span {
+            color: orange;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        Transparant Sign-in Form
+    </div>
+    <form class="form" action="submit.html">
+
+        <div class="main">
+            <p>Sign-in </p>
+            <p>Swiftyly Sign in with</p>
+            <div class="btns">
+                <button>Facebook</button>
+                <button>Google +</button>
+            </div>
+            <p>or use your Email</p>
+        </div>
+
+        <div class="main-1">
+            <div><input type="email" name="email" placeholder="Email" autofocus required></div>
+            <div> <input type="password" name="password" placeholder="Password" required maxlength="10"></div>
+        </div>
+
+
+        <div class="main-2">
+            <input type="checkbox" name="checkbox" checked>
+            <label for="checkbox"> Remember me</label>
+            <span>Forgot password</span>
+        </div>
+
+        <div class="main-3">
+
+            <input type="submit" name="submit" value="Sign-in">
+        </div>
+
+    </form>
+    <div class="last">
+        @2022 Transparant sign in Form. All right reserved | Design by <span>Madhrajsinh</span>
+    </div>
+</body>
+
+</html>

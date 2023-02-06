@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <title>Transperant</title>
+    <style>
+        *{ margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+         }
+
+         .body{ 
+
+            background-color: black;
+
+         }
+
+        .main{
+
+            height: 300px;
+            width: 500px;
+            margin: 200px auto;
+            border-radius:10%;
+            position:relative;
+            background-color: transparent;
+
+        }
+
+
+
+
+         .card{
+
+            height: 300px;
+            width: 500px;
+            border-radius:10%;
+            background:rgba(95, 92, 92, 0.7);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            backdrop-filter: blur(7px);
+            position: relative;
+
+
+         }
+
+
+         .circle1{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            background-color: tomato;
+            position: absolute;
+            top:-25px;
+            left:125px;
+            z-index: 0;
+        }
+         .circle2{
+
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            background-color: blueviolet;
+            position: absolute;
+            top: -90px;
+            right: -90px;   
+            z-index: 0;
+
+       }
+         .circle3{
+
+
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+           background-color: rgb(216, 57, 131);
+            position: absolute;
+            bottom: -50px;
+            left: -70px;
+            z-index: 0;
+
+
+         }
+
+         .text1{
+            position: absolute;
+            top: 50px;
+            left: 30px;
+            color: rgb(158, 177, 177);
+            letter-spacing: 5px;
+
+
+
+         }
+          
+         .text2{
+
+            position: absolute;
+            bottom: 80px;
+            left: 30px;
+            color: rgb(144, 167, 167);
+            letter-spacing: 5px;
+
+         }
+
+         .text3{
+            position: absolute;
+            bottom: 50px;
+            left: 30px;
+            color: rgb(144, 167, 167);
+            letter-spacing: 5px;
+         }
+         
+         #icon{
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            font-size: 50px;
+            color: rgb(141, 156, 156);
+
+
+         }
+
+    </style>
+</head>
+<body class="body">
+
+<div class="main">
+            <div class="card">
+              <p class="text1">MEMBERSHIP</p>         
+              <h2 class="text2">JAMES APPLESEED</h2>
+              <h5 class="text3">UXMISFIT.TOOLS</h5>
+              <i  id="icon" class="fa-regular fa-face-smile"></i>
+
+
+
+            </div>
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+
+        
+
+
+</div>
+
+
+
+
+    
+</body>
+</html>

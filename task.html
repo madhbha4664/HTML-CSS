@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration_information</title>
+	<style type="text/css">
+                     
+
+                    .form{
+
+                    	border: 2px solid black;
+                    	padding: 5px;
+
+
+
+
+                     }		
+
+	</style>
+</head>
+<body>
+
+	<form class="form">
+
+             <h1>Registration info</h1>	
+
+
+		   Name<input type="text" name="username"  required pattern="{a-z A-Z} [4,30]"><br>
+		   Birthdate<input type="date" name="bdate" required >	
+           Gender<select> 
+           	<option hidden></option>
+           	<option>Male</option>
+           	<option>FeMale</option>
+           	<option>Other</option>
+
+           </select><br>
+           Email<input type="email" name="email" required ><br>
+           Phone<input type="text" name="p-number" required pattern="[0-9]{10}"><br>
+
+
+           <input type="submit" name="submit" required placeholder="Submit">
+
+
+
+
+
+
+
+
+
+	</form>
+
+</body>
+</html>

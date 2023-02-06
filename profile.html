@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Madhbha_muli</title>
+    <style>
+        body {
+            background-color: silver;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            border: 1px solid silver;
+            height: 510px;
+            width: 380px;
+            background-color: silver;
+            margin: 100px auto;
+            border-radius: 20px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+        }
+        #back{
+            font-size: 25px;
+            margin-top:10px;
+            margin-left: 10px;   
+        }
+        #back:hover{
+            color: red;
+        }
+
+        #option{
+            font-size: 22px;
+            margin-left: 320px;
+        }
+        #option:hover{
+            color: cornflowerblue;
+        }
+
+        .profile {
+            height: 130px;
+            width: 130px;
+            background: url("image/bapaji_1.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover; 
+            border-radius: 50%;
+            margin-top: 25px;
+            margin-left: 120px;
+            line-height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .profile:hover {
+            box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .profile:hover {
+            box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.5);
+
+        }
+
+        .photo {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            transition: 1s;
+            transform: scale(0);
+
+
+        }
+        .profile:hover .photo{
+
+            transform: scale(1);
+/*            opacity: 0.5;*/
+        }
+
+        .username {
+
+            margin-top: 15px;
+            margin-left: 115px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        }
+
+        .intro {
+            margin-top: 5px;
+            margin-left: 95px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+            word-spacing: 3px;
+
+        }
+
+        .social {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        #facebook {
+            border-radius: 50%;
+            padding-top: 9px;
+            padding-left: 13px;
+            color: rgb(59, 89, 152);
+        }
+
+        #twitter {
+            border-radius: 50%;
+            margin-left: 25px;
+            padding-top: 9px;
+            padding-left: 11px;
+            color: rgb(0, 172, 238);
+        }
+
+        #instagram {
+            border-radius: 50%;
+            margin-left: 25px;
+            padding-top: 9px;
+            padding-left: 11px;
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        #youtube {
+            border-radius: 50%;
+            margin-left: 25px;
+            padding-top: 9px;
+            padding-left: 9px;
+            color: rgb(196, 48, 43);
+        }
+
+        .icons {
+            height: 40px;
+            width: 40px;
+            font-size: 18px;
+            border: 1px solid silver;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .icons:hover {
+            box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .box {
+            margin-top: 30px;
+        }
+
+        .contact {
+            height: 40px;
+            width: 150px;
+            font-size: 18px;
+            margin-left: 25px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+            background-color: silver
+        }
+
+        .contact:hover {
+            box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.5);
+            color: blue;
+        }
+
+
+        .box1 {
+            margin-top: 20px;
+            display: flex;
+            padding: 10px;
+        }
+
+        .boxs {
+            margin-left: 8px;
+            font-size: 16px;
+            height: 30px;
+            width: 110px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .boxs:hover{
+            box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.5);
+        }
+        
+
+        #like {
+            margin-right: 3px;
+        }
+        #like:hover{
+            color: red;
+        }
+        #comment {
+            margin-right: 3px;
+        }
+        #comment:hover{
+            color: blue;
+        }
+        #share{
+            margin-right: 3px;
+        }
+        #share:hover{
+            color: green;
+        }
+
+        .span:hover{
+            color: blue;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <i id="back" class="fa-solid fa-arrow-left"></i>
+        <i id="option" class="fa-solid fa-ellipsis-vertical"></i>
+
+
+        <div class="profile">
+            <img class="photo" src="image\profile_pic.jpeg" alt="">
+        </div>
+
+        <h2 class="username">Madhbha_Muli</h2>
+        <p class="intro">Designer & Developer</p>
+
+        <div class="social">
+
+            <a href="https://www.facebook.com/profile.php?id=100011765857016" target="_blank" >
+                <div class="icons" id="facebook"><i class="fa-brands fa-facebook-f"></i></div>
+            </a>
+            <a href="https://twitter.com/mr_madhbha_muli" target="_blank">
+                <div class="icons" id="twitter"><i class="fa-brands fa-twitter"></i></div>
+            </a>
+            <a href="https://www.instagram.com/madhbha_muli " target="_blank">
+                <div class="icons" id="instagram"><i class="fa-brands fa-instagram"></i></div>
+            </a>
+            <a href="https://www.youtube.com/channel/UCVG6s7TkzR6cI3x5tvgSpHQ" target="_blank">
+                <div class="icons" id="youtube"><i class="fa-brands fa-youtube"></i></div>
+            </a>
+        </div>
+
+        <div class="box">
+            <button class="contact">Message</button>
+            <button class="contact">Subscribe</button>
+        </div>
+        <div class="box1">
+
+            <div class="boxs"> <i id="like" class="fa-solid fa-heart"></i> <span class="span">20.4k</span> </i> </div>
+            <div class="boxs"> <i id="comment" class="fa-solid fa-comment"></i> <span class="span">14.3k</span> </div>
+            <div class="boxs"> <i id="share" class="fa-solid fa-share"></i> <span class="span">12.8k</span> </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration infomation</title>
+
+     <style type="text/css">
+     	
+ 
+         .background{
+
+                      background-color: skyblue
+
+
+         }
+
+		 .main{
+			   margin-top:50px; 
+               position: relative;
+			   border: radius 10px;
+			   box-shadow: 10px 10px 50px black;
+
+
+
+
+		 }
+
+
+     	.table{
+            color: white;
+            background-color: black;
+     		height: 600px;
+     		width: 400px;
+            position: absolute;
+			top: 0;
+		   left: 0;
+     		padding:40px;
+     		margin-left:800px;
+     		margin-top: 50px;
+
+
+     	}
+
+     	
+        .submit{
+                margin-right: 60px;
+                font-size: 20px;
+
+ }
+
+ .main .submit .hover{
+               
+	background-color: green;
+	cursor: pointer;
+
+
+ }
+
+        .heading{
+
+                  font-size: 31px;
+                  
+        }
+
+        .image{
+           position: absolute;
+		   
+		   top: 0px;
+		   left: 462px;
+
+        	margin-top: 50px;
+        }
+
+        
+
+     </style>
+
+</head>
+<body class="background">
+	<div class="main">
+
+<table class="table">
+	
+	
+<tr>
+	<th colspan="2" class="heading">Registration_info</th>
+</tr>
+
+<tr>
+	<td>Name</td>
+	<td> <input type="text" name="username" required pattern="[a-z A-Z] {4,30}">
+	</td>
+
+</tr>
+
+<tr>
+	<td>Birthdate</td>
+	<td> <input type="date" name="birthdate">
+	</td>
+
+</tr>
+
+<tr>
+	<td>Gender</td>
+	<td> 
+		<select name="gender">
+			<option hidden></option>
+			<option>Male</option>
+			<option>Female</option>
+			<option>Other</option>
+
+		</select>
+
+	</td>
+
+</tr>
+
+<tr>
+	<td>Email</td>
+	<td> <input type="Email" name="email">
+	</td>
+
+</tr>
+
+<tr>
+	<td>Phone</td>
+	<td> <input type="text" name="p-number" required pattern="[0-9]{10}">
+	</td>
+
+</tr>
+ <tr>
+ 	<th colspan="2">
+ 	<div class="submit">	<input type="submit" name="submit" > </div>
+ 	</th>
+ </tr>	
+ 		 
+</table>  
+
+
+<div class="image">
+	
+<img src="https://w0.peakpx.com/wallpaper/807/513/HD-wallpaper-krishna-art-colours-feather-god-lord-native-yellow-thumbnail.jpg">
+
+</div>
+
+	</div>		
+
+</body>
+</html>

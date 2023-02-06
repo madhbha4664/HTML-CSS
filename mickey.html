@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>micky-mouse-task-14</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(#2193b0, #6dd5ed);
+        }
+
+        .main {
+            height: 550px;
+            width: 500px;
+            border-radius: 50%;
+            margin: 80px auto;
+            position: relative;
+            background-color: black;
+            box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.4), -20px -20px 30px rgba(0, 0, 0, 0.4);
+          
+        }
+
+        .ear1 {
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            position: absolute;
+            left: -170px;
+            top: -80px;
+            background-color: black;
+            transition: 1s;
+        }
+
+        .main:hover .ear1 {
+            transform: rotate(-360deg);
+            background-color: red;
+        }
+
+        .ear2 {
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            position: absolute;
+            right: -170px;
+            top: -80px;
+            background-color: black;
+            transition: 1s;
+        }
+
+        .main:hover .ear2 {
+            transform: rotate(-360deg);
+            background-color: red;
+        }
+
+        .face1 {
+            height: 400px;
+            width: 250px;
+            border-radius: 50%;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            transform: rotate(-10deg);
+            background-color: #fcdc7c;
+        }
+
+        .face2 {
+            height: 400px;
+            width: 250px;
+            border-radius: 50%;
+            position: absolute;
+            right: 50px;
+            top: 50px;
+            transform: rotate(10deg);
+            background-color: #fcdc7c;
+        }
+
+        .face3 {
+            height: 350px;
+            width: 150px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -55px;
+            left: 60px;
+            transform: rotate(130deg);
+            background-color: #fcdc7c;
+        }
+
+        .face4 {
+            height: 350px;
+            width: 150px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -55px;
+            right: 60px;
+            transform: rotate(-130deg);
+            background-color: #fcdc7c;
+        }
+
+        .face5 {
+            height: 200px;
+            width: 180px;
+            border-radius: 50%;
+            position: absolute;
+            left: 165px;
+            bottom: -30px;
+            border-bottom: 5px solid black;
+            background-color: #fcdc7c;
+        }
+
+        .face6 {
+            height: 350px;
+            width: 200px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -10px;
+            left: 155px;
+            background-color: black;
+            overflow: hidden;
+
+        }
+
+        .tith1 {
+            height: 100px;
+            width: 100px;
+            /* border: 1px solid red; */
+            /* background-color: red; */
+            position: absolute;
+            bottom: -60px;
+            left: 20px;
+            border-radius: 50%;
+            transition: 0.5s;
+        }
+
+        .tith2 {
+            height: 100px;
+            width: 100px;
+            /* border: 1px solid red; */
+            /* background-color: red; */
+            position: absolute;
+            bottom: -60px;
+            right: 20px;
+            border-radius: 50%;
+            border-top: 3px solid black;
+            transition: 0.5s;
+        }
+
+        /* .main:hover .tith1 {
+            background-color: red;
+        }
+
+        .main:hover .tith2 {
+            background-color: red;
+        } */
+
+        .face7 {
+            height: 380px;
+            width: 380px;
+            border-radius: 50%;
+            border-bottom: 5px solid red;
+            position: absolute;
+            left: 60px;
+            bottom: 50px;
+            background-color: #fcdc7c;
+        }
+
+        .face8 {
+            height: 350px;
+            width: 200px;
+            border-radius: 50%;
+            position: absolute;
+            left: 155px;
+            top: 150px;
+        }
+
+        .x {
+            height: 50px;
+            width: 100px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 70px;
+            left: 50px;
+            background-color: black;
+        }
+
+        .y {
+            height: 70px;
+            width: 120px;
+            border-radius: 50%;
+            border-top: 5px solid black;
+            position: absolute;
+            bottom: 60px;
+            left: 40px;
+        }
+
+        .z {
+            height: 150px;
+            width: 50px;
+            border-radius: 50%;
+            position: absolute;
+            left: 40px;
+            top: 75px;
+            transform: rotate(-5deg);
+            /* background-color: black; */
+            border: 1px solid black;
+            overflow: hidden;
+
+        }
+
+        .z::before {
+            content: "";
+            height: 150px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            transition: 1s;
+
+        }
+
+        .main:hover .z::before {
+            top: -150px;
+        }
+
+        .a {
+            height: 150px;
+            width: 50px;
+            border-radius: 50%;
+            position: absolute;
+            right: 40px;
+            top: 75px;
+            transform: rotate(5deg);
+            /* background-color: black; */
+            border: 1px solid black;
+            overflow: hidden;
+
+
+        }
+
+        .a::before {
+            content: "";
+            height: 150px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+            transition: 1s;
+            top: 0px;
+        }
+
+        .main:hover .a::before {
+            top: -150px;
+        }
+
+        .one {
+            height: 60px;
+            width: 30px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0px;
+            left: 10px;
+            transform: rotate(5deg);
+            background-color: black;
+            animation: eye 1s infinite;
+        }
+
+        .two {
+            height: 60px;
+            width: 30px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0px;
+            right: 10px;
+            transform: rotate(-5deg);
+            background-color: black;
+            animation: eye 1s infinite;
+        }
+
+        @keyframes eye {
+            0% {
+                left: 0px;
+            }
+
+            50% {
+                left: 20px;
+            }
+
+            100% {
+                left: 0px;
+            }
+            
+        }
+
+       
+      
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="ear1"></div>
+        <div class="ear2"></div>
+        <div class="face1"></div>
+        <div class="face2"></div>
+        <div class="face3"></div>
+        <div class="face4"></div>
+        <div class="face5"></div>
+        <div class="face6">
+            <div class="tith1"></div>
+            <div class="tith2"></div>
+        </div>
+        <div class="face7"></div>
+        <div class="face8">
+
+            <div class="x"></div>
+            <div class="y"></div>
+            <div class="z">
+                <div class="one"></div>
+            </div>
+            <div class="a">
+                <div class="two"></div>
+            </div>
+        </div>
+    </div></marquee>
+ 
+</body>
+
+</html>
