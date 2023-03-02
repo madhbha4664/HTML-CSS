@@ -1,6 +1,11 @@
+
+       ..................................................  Module-1  ..........................................................
+
+
+
+
 1. Are the HTML tags and elements the same thing?
 => NO
-
 
 
 2. What are tags and attributes in HTML?
@@ -100,3 +105,9 @@ By using SVGs, you get images that can scale up to any resolution, which comes i
 
 20.What are logical and physical tags in HTML?
 =>Physical and Logical tags are used in HTML for better visibility and understanding of the text by the user on the web page. However, both tags differ from each other as suggested by their names. Logical Tags : Logical Tags are used in HTML to display the text according to the logical styles
+
+
+
+
+
+           ..................................................  End  ..........................................................

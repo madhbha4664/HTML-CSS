@@ -1,0 +1,139 @@
+           ..................................................  Module-4  ..........................................................
+
+
+1. What is JavaScript? 
+=> JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. (Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)
+
+2. What is the use of isNaN function?
+=> The isNaN() function accepts a value and determines whether the given value is a number or not.If so, this method returns true else it returns false. You can also call this method using Number object.
+
+3.What is negative Infinity? 
+=> The Number.NEGATIVE_INFINITY property represents the negative Infinity value. Any value that goes over the maximum value is available in JavaScript gets changed to negative infinity.
+
+4. Which company developed JavaScript?
+=> JavaScript was invented by Brendan Eich in 1995. It was developed for Netscape 2, and became the ECMA-262 standard in 1997. After Netscape handed JavaScript over to ECMA, the Mozilla foundation continued to develop JavaScript for the Firefox browser.
+
+5. What are undeclared and undefined variables? 
+=> Undeclared: It occurs when a variable which hasn’t been declared using var, let or const is being tried to access.
+
+Undefined: It occurs when a variable has been declared using var, let or const but isn’t given a value.
+
+6. Write the code for adding new elements dynamically? 
+=> <!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+
+	<style>
+		html,
+		body {
+			height: 100%;
+			width: 100%;
+		}
+
+		.button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.tasks {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="button">
+		<button id="addTask">Add task</button>
+	</div>
+	<div class="tasks"></div>
+	<script type="text/javascript">
+
+		let task = document.getElementsByClassName("tasks");
+
+		let addTask = document.getElementById("addTask");
+		
+		addTask.addEventListener('click', function () {
+	
+			for (let i = 0; i < task.length; i++) {
+				
+				let newDiv = document.createElement("div");
+					
+				newDiv.setAttribute("class", "list");
+					
+				newDiv.innerText = "New Div created";
+				task[i].append(newDiv);
+			}
+		})
+</script>
+</body>
+</html>
+
+
+7.  What is the difference between ViewState and SessionState? 
+=> The basic difference between these two is that the ViewState is to manage state at the client's end, making state management easy for end-user while SessionState manages state at the server's end, making it easy to manage content from this end too.
+
+
+8. What is === operator? 
+=>   === will not just compare values, but it will also compare data types and if both matches, it will return true or else it will be false.
+
+9. How can the style/class of an element be changed? 
+=> Another way to alter the style of an element is by changing its class attribute. class is a reserved word in JavaScript, so in order to access the element's class, you use element. className .
+
+
+10.  How to read and write a file using JavaScript? 
+=> Files can be read and written by using java script functions – fopen(),fread() and fwrite().
+The function fopen() takes two parameters – 1. Path and 2. Mode (0 for reading and 3 for writing). The fopen() function returns -1, if the file is successfully opened.
+
+
+11.What are all the looping structures in JavaScript?
+=> 
+•  for / for in / for of / forEach
+•  While
+•  do-while loops
+
+
+12. How can you convert the string of any base to an integer in JavaScript? 
+=>Users can use functions in JavaScript to convert a string into an integer. There are many ways to convert a string into an integer value. One is by using JavaScript functions like Number(), parseFloat(), parseInt().
+
+The other techniques like unary plus operator, bitwise NOT operator, etc., can also convert string input into an integer value. 
+
+13.What is the function of the delete operator? 
+=>The delete operator removes a property from an object. If the property's value is an object and there are no more references to the object, the object held by that property is eventually released automatically
+
+" Note that, the delete operator only works on objects and not on variables or functions ."
+
+
+14. What are all the types of Pop up boxes available in JavaScript? 
+=>In Javascript, popup boxes are used to display the message or notification to the user. There are three types of pop-up boxes in JavaScript namely Alert Box, Confirm Box and Prompt Box.
+
+
+15. What is the use of Void (0)? 
+=>“javascript: void(0)” is similar to void. javascript: void(0) means return undefined as a primitive value. We use this to prevent any negative effects on a webpage when we insert some expression. For example, in the case of URL hyperlinks
+
+
+16. How can a page be forced to load another page in JavaScript?
+=> In JavaScript, we can use window. location object to force a page to load another page. We can use the location object to set the URL of a new page
+
+
+17. What are the disadvantages of using innerHTML in JavaScript?
+=>
+• Content is replaced everywhere.
+• We cannot use like "appending to innerHTML".
+• Even if you use +=like "innerHTML = innerHTML + 'html'" still the old content is replaced by html.
+• The entire innerHTML content is re-parsed and builds into elements, therefore its much slower.
+• The innerHTML does not provide validation and therefore we can potentially insert valid and broken HTML in the document and break it.
+
+
+
+
+    .....................................................................End................................................................
